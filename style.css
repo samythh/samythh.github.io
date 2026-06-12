@@ -26,11 +26,22 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  /* two fixed atmospheric blooms — genre-allowed, no animation */
+  /* atmospheric blooms — one fixed + one that follows the cursor (var --mx/--my) */
   background-image:
-    radial-gradient(40% 50% at 82% 8%, var(--bloom-1), transparent 70%),
+    radial-gradient(460px 460px at var(--mx, 78%) var(--my, 14%), oklch(72% 0.15 45 / 0.10), transparent 68%),
     radial-gradient(45% 45% at 8% 92%, var(--bloom-2), transparent 72%);
   background-attachment: fixed;
+}
+
+/* Film grain — subtle texture for depth (over the canvas, under nav). */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9;
+  opacity: 0.05;
+  background-size: 160px 160px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 img { display: block; max-width: 100%; height: auto; }

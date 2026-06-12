@@ -15,6 +15,30 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
+  /* Cursor-following ember bloom — only on fine pointers, respects reduced motion. */
+  const finePointer = window.matchMedia("(pointer: fine)").matches;
+  if (finePointer && !reduceMotion) {
+    const root = document.documentElement;
+    let mx = 78, my = 14, queued = false;
+    const apply = () => {
+      root.style.setProperty("--mx", mx + "%");
+      root.style.setProperty("--my", my + "%");
+      queued = false;
+    };
+    window.addEventListener(
+      "pointermove",
+      (e) => {
+        mx = (e.clientX / window.innerWidth) * 100;
+        my = (e.clientY / window.innerHeight) * 100;
+        if (!queued) {
+          queued = true;
+          requestAnimationFrame(apply);
+        }
+      },
+      { passive: true }
+    );
+  }
+
   /* Top scroll-progress line — functional indicator, transform-only. */
   if (progress) {
     let ticking = false;

@@ -280,8 +280,8 @@ kolaborasi — bertumbuh dari "membangun proyek" menjadi "membangun produk yang 
 
 ## 8. Workflow Git & GitHub
 
-- **Repo GitHub:** akun <https://github.com/samythh> (nama repo: `portofolio`
-  atau `samythh.github.io` bila ingin URL bersih di GitHub Pages).
+- **Repo GitHub:** `samythh/samythh.github.io` (URL bersih untuk GitHub Pages).
+  Remote `origin` sudah terpasang. Live target: `https://samythh.github.io`.
 - **Commit hanya saat diminta.** Jangan auto-commit/auto-push tanpa instruksi.
 - **Jangan commit langsung ke `main`** untuk perubahan besar — buat branch dulu.
 - **Format pesan commit:** ringkas, imperatif, Bahasa Indonesia/Inggris konsisten.
@@ -341,5 +341,8 @@ git push -u origin main
 - [x] Typewriter di hero (mono, mengetik peran bergantian) — fallback statis di reduced-motion.
 - [x] Favicon "M" (ember) — `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`,
   `favicon-32.png`. Dibuat oleh script `make_favicon.py`.
-- [ ] Setup git lokal + push pertama ke repo `samythh/portofolio`.
+- [x] Setup git + push pertama (branch `main`) — 12 Jun 2026.
+- [x] Rename repo ke `samythh.github.io` (URL bersih); remote lokal sudah di-update.
+- [ ] Aktifkan GitHub Pages (Settings → Pages → branch `main` / root) → live di
+  `https://samythh.github.io`.
 - [ ] (Opsional) keputusan: tetap vanilla atau pindah ke Next.js.
