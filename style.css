@@ -8,7 +8,7 @@
  * honest: pass (56) · chrome: pass (57) · tokens: pass (58) · responsive: pass (59) · icons: pass (60)
  * mobile: pass (36, 59, 61–69) */
 
-@import url("tokens.css");
+@import url("tokens.css?v=3");
 
 /* ============================ RESET ============================ */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }

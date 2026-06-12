@@ -341,6 +341,9 @@ git push -u origin main
 - [x] Typewriter di hero (mono, mengetik peran bergantian) — fallback statis di reduced-motion.
 - [x] Cursor-following ember bloom (hanya pointer halus) + film grain halus (`feTurbulence`
   <0.1 opacity) untuk kedalaman. Atmospheric, bukan 3D dekoratif.
+- [x] Stats strip (3.68 GPA · 2nd Place · 4 Projects · 2yr) — angka real, tabular-nums.
+- [x] Marquee skill berjalan (outline/ghosted, quiet) sbg pembatas; pause on hover,
+  static di reduced-motion.
 - [x] Favicon "M" (ember) — `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`,
   `favicon-32.png`. Dibuat oleh script `make_favicon.py`.
 - [x] Setup git + push pertama (branch `main`) — 12 Jun 2026.
