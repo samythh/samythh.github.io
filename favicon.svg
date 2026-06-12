@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MSH monogram">
+  <rect width="64" height="64" rx="15" fill="#16130f"/>
+  <path d="M17 46 V20 L32 37 L47 20 V46" fill="none" stroke="#f98a5b"
+        stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

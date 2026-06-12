@@ -1,0 +1,79 @@
+/* Hallmark · tokens · genre: atmospheric · theme: Midnight (dark · warm-ember accent · geometric-sans)
+ * Portable design tokens for the Mikail Samyth Habibillah portfolio.
+ * Every colour / font / space / type value in style.css references a token here. */
+
+:root {
+  /* ---- Colour (OKLCH · Midnight, anchor hue 40, single warm accent) ---- */
+  --color-paper:    oklch(15% 0.012 40);   /* base canvas — near-black, warm */
+  --color-paper-2:  oklch(19% 0.014 40);   /* elevated card */
+  --color-paper-3:  oklch(24% 0.016 42);   /* higher elevation / hover */
+  --color-rule:     oklch(33% 0.012 42);   /* hairline */
+  --color-neutral:  oklch(62% 0.010 45);   /* dim text */
+  --color-muted:    oklch(76% 0.010 50);   /* body on dark */
+  --color-ink:      oklch(96% 0.006 70);   /* primary text */
+  --color-accent:   oklch(75% 0.150 45);   /* warm ember / coral */
+  --color-accent-2: oklch(68% 0.130 22);   /* deeper coral — second bloom only */
+  --color-accent-ink: oklch(15% 0.012 40); /* text on an accent fill (≥ 4.5:1) */
+  --color-focus:    oklch(80% 0.150 50);
+
+  /* shadows (tinted near-black, alpha) — referenced, never inlined */
+  --shadow-nav:  0 10px 30px -16px oklch(2% 0.02 40 / 0.6);
+  --shadow-shot: 0 24px 60px -40px oklch(2% 0.02 40 / 0.8);
+
+  /* bloom tints (low-alpha, derived from accent — overlays, not palette colours) */
+  --bloom-1: oklch(72% 0.15 45 / 0.18);
+  --bloom-2: oklch(64% 0.13 22 / 0.14);
+
+  /* ---- Type families ---- */
+  --font-display: "Geist", system-ui, -apple-system, sans-serif;
+  --font-body:    "Geist", system-ui, -apple-system, sans-serif;
+  --font-mono:    "Geist Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* ---- Type scale (1.25 major third, 16px base) ---- */
+  --text-xs:   0.64rem;
+  --text-sm:   0.8rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-4xl:  3.8147rem;
+  --text-display:   clamp(3rem, 8vw + 0.5rem, 7rem);   /* marquee hero */
+  --text-display-s: clamp(2.25rem, 5vw + 0.5rem, 4rem);
+
+  /* ---- Spacing (4pt scale, semantic) ---- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6.5rem;
+  --page-gutter: clamp(1.25rem, 5vw, 6rem);
+
+  /* ---- Rules / radius ---- */
+  --rule-hair:  1px;
+  --rule-thick: 2px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ---- z-index (named scale) ---- */
+  --z-base: 1;
+  --z-sticky: 10;
+  --z-nav: 20;
+  --z-overlay: 30;
+
+  --banner-height: 0px;
+}
