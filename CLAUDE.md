@@ -339,6 +339,8 @@ git push -u origin main
   `optimize_images.py`. HTML pakai `assets/*.webp`; PNG asli disimpan sbg backup.
 - [x] Animasi garis: scroll-progress, garis aksen judul, divider hero, rail panel proyek.
 - [x] Typewriter di hero (mono, mengetik peran bergantian) — fallback statis di reduced-motion.
+- [x] Cursor-following ember bloom (hanya pointer halus) + film grain halus (`feTurbulence`
+  <0.1 opacity) untuk kedalaman. Atmospheric, bukan 3D dekoratif.
 - [x] Favicon "M" (ember) — `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`,
   `favicon-32.png`. Dibuat oleh script `make_favicon.py`.
 - [x] Setup git + push pertama (branch `main`) — 12 Jun 2026.
