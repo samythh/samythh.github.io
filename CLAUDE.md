@@ -30,7 +30,7 @@ layout berani, micro-interaction. Hindari kesan generik/AI-slop.
 | --- | --- |
 | Nama | Mikail Samyth Habibillah |
 | Tagline | Information Systems Student · Web Dev & AI Enthusiast |
-| Jurusan | B.S. Sistem Informasi — Universitas Andalas (2024–2028) · GPA 3.68/4.00 |
+| Jurusan | B.S. Sistem Informasi — Universitas Andalas (2024–2028) · GPA 3.63/4.00 |
 | Peran utama | Frontend Developer, Project Management, UI/UX, Video Editing |
 | Email | <habibillahmikail@gmail.com> |
 | Telepon | +62 898-8228-875 |
@@ -247,7 +247,7 @@ Tools:
 ### 5.5 Pendidikan
 
 - **B.S. Information Systems** — Universitas Andalas · 2024 – 2028 (expected)
-- GPA: 3.68 / 4.00
+- GPA: 3.63 / 4.00
 - Coursework: Cloud Computing · Database Design · Software Engineering · Web Programming
 - Award: 2nd Place — Core3D Hackathon 2026 (West Sumatra Regional Level)
 
@@ -341,7 +341,7 @@ git push -u origin main
 - [x] Typewriter di hero (mono, mengetik peran bergantian) — fallback statis di reduced-motion.
 - [x] Cursor-following ember bloom (hanya pointer halus) + film grain halus (`feTurbulence`
   <0.1 opacity) untuk kedalaman. Atmospheric, bukan 3D dekoratif.
-- [x] Stats strip (3.68 GPA · 2nd Place · 4 Projects · 2yr) — angka real, tabular-nums.
+- [x] Stats strip (3.63 GPA · 2nd Place · 4 Projects · 2yr) — angka real, tabular-nums.
 - [x] Marquee skill berjalan (outline/ghosted, quiet) sbg pembatas; pause on hover,
   static di reduced-motion.
 - [x] Favicon "M" (ember) — `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`,
